@@ -5,11 +5,11 @@ import { animateScroll } from 'react-scroll';
 import { Fade } from 'react-awesome-reveal';
 
 // components
-import Home from './Components/Home';
-import Nav from './Components/Header';
-import Projects from './Components/Projects';
+import Home from './Pages/Home/Home';
+import Nav from './Components/Header/Header';
+import Projects from './Pages/Projects/Projects'
 import Socials from './Components/Socials';
-import About from './Components/About';
+import About from './Components/About/About';
 import Skills from './Components/Skills';
 
 // icon
@@ -22,11 +22,11 @@ function App() {
     setIsDarkMode(prevMode => !prevMode);
   }
 
-  return (
+  return ( 
     <div className={`App ${!isDarkMode ?'light' : ''}`}>
       <div>
         <Nav isDarkMode={isDarkMode} handleToggle={toggleTheme} />
-        <Home />
+          <Home />
         <Fade fraction={.2} triggerOnce>
           <About />
         </Fade>

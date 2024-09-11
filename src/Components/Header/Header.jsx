@@ -8,9 +8,9 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
+import photoProfil from "../../assets/file.1.webp"
 
-import '../styles/Header.css'
-
+import '../Header/Header.css'
 
 const Nav = ({ isDarkMode, handleToggle }) => {
   const [isOpen, setIsOpen] = useState(true)
@@ -21,13 +21,13 @@ const Nav = ({ isDarkMode, handleToggle }) => {
 
   const nav =
     <ul style={{ pointerEvents: 'auto' }}>
-      <li><Link onClick={handleClick} activeClass="active" to="projects" spy={true} smooth={true} offset={-80} duration={500}>
-        Projects
-      </Link></li>
       <li><Link onClick={handleClick} activeClass="active" to="about" spy={true} smooth={true} offset={-80} duration={500}>
-        About
+        A propos
       </Link></li>
-      <li><Link onClick={handleClick} activeClass="active" to="mail" spy={true} smooth={true} offset={0} duration={500}>
+      <li><Link onClick={handleClick} activeClass="active" to="projects" spy={true} smooth={true} offset={-80} duration={500}>
+        Projets
+      </Link></li>
+      <li><Link onClick={handleClick} activeClass="active" to="socials" spy={true} smooth={true} offset={0} duration={500}>
         Contact
       </Link></li>
     </ul>
@@ -40,13 +40,12 @@ const Nav = ({ isDarkMode, handleToggle }) => {
             <Container>
               <Row>
                 <Col xs={6} md={4}>
-                  <Image src="holder.js/171x180" roundedCircle />
+                  <Image src={photoProfil} className='roundedCircle'/>
                 </Col>
               </Row>
             </Container>          
           </Link>
         </h1>
-        
         <div className="menu-and-theme">
           <div onClick={handleClick} className="menu">
             <GiHamburgerMenu />

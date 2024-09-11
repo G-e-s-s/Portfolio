@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/Project.css'
+import '../Project/Project.css'
 
 const Project = ({ name, desc, techs, liveLink, githubLink, isOpenSource }) => {
   return (

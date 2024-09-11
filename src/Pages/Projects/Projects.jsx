@@ -1,6 +1,6 @@
 import React from "react";
-import Project from "./Project.jsx";
-import "../styles/Projects.css";
+import Project from "../../Components/Project/Project";
+import "../Projects/Projects.css";
 
 const Projects = () => {
   const projectsInfo = [

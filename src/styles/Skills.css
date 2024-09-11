@@ -58,8 +58,13 @@
 .html:hover {
 	--skill-color: #f1662a;
 }
-.css:hover,
-.ts:hover {
+.canva:hover {
+	--skill-color: #6253e8;
+}
+.notion:hover {
+	--skill-color: black;
+}
+.css:hover {
 	--skill-color: #1572b6;
 }
 .react:hover {
@@ -74,8 +79,11 @@
 .mon:hover {
 	--skill-color: #41a247;
 }
-.fire:hover {
+.github:hover {
 	--skill-color: #eeab37;
+}
+.adobe:hover {
+	--skill-color: #ee3737;
 }
 
 @media only screen and (max-width: 600px) {
