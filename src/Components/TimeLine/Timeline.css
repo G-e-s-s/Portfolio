@@ -1,0 +1,65 @@
+.items-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.items-container h1 {
+    margin: 30px;
+}
+
+.vertical-timeline {
+    margin: 0 auto 40px auto;
+}
+
+.vertical-timeline-element-icon {
+    font-family: 'Courier Prime', monospace;
+	background: linear-gradient(to bottom, #05BECD, #3A7DD9);
+}
+
+.vertical-timeline-element-date {
+    color: white;
+}
+
+.light .vertical-timeline-element-date {
+    color: #3A7DD9;
+    background: transparent;
+}
+
+.vertical-timeline p {
+    color: rgb(39, 40, 34);
+}
+
+.vertical-timeline-element p {
+    color: rgb(39, 40, 34);
+}
+
+.vertical-timeline-element h3 {
+    color: rgb(39, 40, 34);
+}
+
+.vertical-timeline-element h4 {
+    color: rgb(39, 40, 34);
+}
+
+.vertical-timeline-element-icon {
+    color: rgb(39,40,34);
+}
+
+.vertical-timeline::before {
+    height: 98%;
+}
+
+.vertical-timeline-element {
+    color: white;
+}
+
+.svg-inline--fa {
+    color: white;
+}
+
+@media screen and (max-width: 1170px) {
+    .vertical-timeline-element {
+        color: rgb(39, 40, 34);
+    }
+}

@@ -21,7 +21,7 @@
 }
 
 .light .open {
-	background-color: #232135;
+	background: linear-gradient(to bottom, #05BECD, #3A7DD9);
 	color: #fff;
 }
 

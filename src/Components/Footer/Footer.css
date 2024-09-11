@@ -5,14 +5,18 @@
 }
 
 .socials {
-	padding-bottom: 50px;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .social {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
 	flex-wrap: wrap;
+	margin: 0 88px;
 }
 
 .social div {
@@ -22,16 +26,12 @@
 	align-items: center;
 	min-height: var(--social-size);
 	width: calc(var(--social-size) - 50px);
-	margin-top: 20px;
+	margin: 35px;
 	background: #181721;
 	border: solid;
 	border-image-slice: 1;
 	border-width: 1px;
-	border-image-source: linear-gradient(
-		60deg,
-		#6253e8,
-		var(--social-main-color)
-	);
+	border-image-source: linear-gradient( 60deg, #6253e8, var(--social-main-color));
 }
 
 .social div svg {
@@ -58,6 +58,10 @@
 	overflow: hidden;
 }
 
+.light .social div {
+	background-color: transparent;
+}
+
 .insta {
 	--social-main-color: rgb(193, 53, 132);
 }
@@ -70,12 +74,39 @@
 	color: black !important;
 }
 
-.twit {
-	--social-main-color: rgb(29, 161, 242);
+.mail {
+	--social-main-color: rgb(193, 53, 53);
 }
 
 .link {
 	--social-main-color: rgb(0, 119, 181);
+}
+
+.arrow {
+	background-color: #232135;
+	height: 60px;
+	width: 60px;
+	border-radius: 10px;
+	display: grid;
+	place-items: center;
+	cursor: pointer;
+	transition: all 0.5s;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+}
+
+.arrow svg {
+	color: #6253e8;
+}
+
+.light .arrow{
+	background-color: transparent;
+	transition: all 0.5s;
+}
+
+#droit {
+	font-size: 12px;
 }
 
 @media only screen and (max-width: 386px) {

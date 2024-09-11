@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../styles/Skills.css'
+import '../Skills/Skills.css'
 
 import { SiJavascript, SiHtml5, SiCss3, SiReact, SiNodedotjs, SiFigma, SiMongodb, SiGithub, SiNotion, SiCanva, SiAdobe } from 'react-icons/si'
 

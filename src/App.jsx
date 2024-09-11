@@ -1,19 +1,16 @@
-import './styles/App.css';
+import '../src/assets/styles/App.css';
 
 import { useState } from 'react';
-import { animateScroll } from 'react-scroll';
 import { Fade } from 'react-awesome-reveal';
 
 // components
 import Home from './Pages/Home/Home';
-import Nav from './Components/Header/Header';
+import Header from './Components/Header/Header';
 import Projects from './Pages/Projects/Projects'
-import Socials from './Components/Socials';
+import Footer from './Components/Footer/Footer'
 import About from './Components/About/About';
-import Skills from './Components/Skills';
-
-// icon
-import { CgArrowLongUp } from 'react-icons/cg';
+import Skills from './Pages/Skills/Skills';
+import Timeline from './Components/TimeLine/Timeline';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -25,31 +22,28 @@ function App() {
   return ( 
     <div className={`App ${!isDarkMode ?'light' : ''}`}>
       <div>
-        <Nav isDarkMode={isDarkMode} handleToggle={toggleTheme} />
-          <Home />
-        <Fade fraction={.2} triggerOnce>
+        <Header isDarkMode={isDarkMode} handleToggle={toggleTheme} />
+        <Home />
+        <Fade fraction={.3} triggerOnce>
           <About />
         </Fade>
       </div>
       <div className={`dark ${!isDarkMode ?'light' : ''}`}>
-        <Fade fraction={.2} triggerOnce>
+        <Fade fraction={.3} triggerOnce>
           <Skills />
         </Fade>
-        <Fade fraction={.2} triggerOnce>
+        <Fade fraction={.3} triggerOnce>
           <Projects />
         </Fade>
       </div>
       <div>
-        <Fade fraction={.2} triggerOnce>
-          <Socials />
+        <Fade fraction={.3} triggerOnce>
+          <Timeline />
         </Fade>
       </div>
       <div className={`dark ${!isDarkMode ?'light' : ''}`}>
-        <Fade fraction={.2} triggerOnce>
-          <p>Merci 💘</p>
-          <div className='arrow' onClick={() => animateScroll.scrollToTop()}>
-            <CgArrowLongUp />
-          </div>
+        <Fade fraction={.3} triggerOnce>
+          <Footer />
         </Fade>
       </div>
     </div>
