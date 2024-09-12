@@ -6,6 +6,10 @@
 
 .items-container h1 {
     margin: 30px;
+    width: fit-content;
+	background: var(--gradient);
+	background-clip: text;
+	color: transparent;
 }
 
 .vertical-timeline {
@@ -17,13 +21,13 @@
 	background: linear-gradient(to bottom, #05BECD, #3A7DD9);
 }
 
-.vertical-timeline-element-date {
-    color: white;
-}
-
-.light .vertical-timeline-element-date {
-    color: #3A7DD9;
-    background: transparent;
+.vertical-timeline-element-date, 
+.vertical-timeline-element h3, 
+.vertical-timeline-element h4{
+    width: fit-content;
+	background: var(--gradient);
+	background-clip: text;
+	color: transparent;
 }
 
 .vertical-timeline p {
@@ -31,14 +35,6 @@
 }
 
 .vertical-timeline-element p {
-    color: rgb(39, 40, 34);
-}
-
-.vertical-timeline-element h3 {
-    color: rgb(39, 40, 34);
-}
-
-.vertical-timeline-element h4 {
     color: rgb(39, 40, 34);
 }
 

@@ -4,19 +4,15 @@ import '../Home/Home.css'
 
 import TypeWriterEffect from 'react-typewriter-effect';
 import { animateScroll } from 'react-scroll';
-// import { saveAs } from "file-saver";
 import { Link } from 'react-scroll';
+
+import { GiButterflyFlower } from 'react-icons/gi'
+
 
 const Home = () => {
   const [number, setNumber] = useState(0);
   const arrayOfWords = ['Bonjour', "Vous m'avez trouvé", 'Bienvenue sur mon portfolio', 'Contactez moi', 'Enjoy'];
   const textContent = useRef();
-  // const handleDownload = () => {
-  //   saveAs(
-  //     "google drive url",
-  //     "Resume.pdf"
-  //   )
-  // }
 
   const handleChange = () => {
     textContent.current.style.display = 'inline-block';
@@ -33,17 +29,18 @@ const Home = () => {
     }
   }
 
-
   return (
     <div className='home' id='home'>
       <div className="home-text">
-        <h1>
+        <h1 className='name'>
           <span className='gradientText'>
             Gessica Goublet
           </span>
           <span>
             <span onClick={handleChange}>
-            🌸
+            <div className='flower'>
+              < GiButterflyFlower />
+            </div>
             </span>
             <span ref={textContent} style={{ display: 'none' }}>
               Bonjour
@@ -62,9 +59,11 @@ const Home = () => {
         />
         <div className="btns">
           <Link className='btn1' activeClass="active" to="mail" spy={true} smooth={true} offset={0} duration={500}>
-            Hire Me
+            Contactez-moi
           </Link>
-          {/* <div onClick={handleDownload} className='btn2'>View Resume</div> */}
+          <a className='btn2' href='https://www.canva.com/design/DAFD7wMUL-8/UamjcRgbfVMmZpq9JnYR0w/view?utm_content=DAFD7wMUL-8&utm_campaign=designshare&utm_medium=link&utm_source=editor' target='_blank' rel='noreferrer'>
+            Dossier artistique
+          </a>
         </div>
       </div>
     </div>

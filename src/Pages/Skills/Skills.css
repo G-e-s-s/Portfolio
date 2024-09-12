@@ -1,6 +1,7 @@
 :root {
-	--container-width: 600px;
+	--container-width: 650px;
 	--skill-size: calc(var(--container-width) / 5);
+	--gradient: linear-gradient(to bottom, #05BECD, #3A7DD9);
 }
 
 .skills {
@@ -10,12 +11,17 @@
 }
 .skills h2 {
 	margin: 0 0 30px 0;
+	width: fit-content;
+	background: var(--gradient);
+	background-clip: text;
+	color: transparent;
 }
 
 .skill {
 	display: flex;
 	flex-wrap: wrap;
 	margin-bottom: 50px;
+	justify-content: space-around;
 }
 
 .skill div {
@@ -45,19 +51,20 @@
 }
 
 .light .skill p {
-	color: var(--skill-color,rgba(68,146,163,1));
+	color: var(--skill-color,#1196d9e2);
 	transition: all 0.5s;
 }
 
 .light .skill svg {
-	color: var(--skill-color,rgba(68,146,163,1));
+	color: var(--skill-color,#1196d9e2);
 	transition: all 0.5s;
 	min-height: calc(var(--skill-size) - 40px);
 	width: calc(var(--skill-size) - 40px);
+
 }
 
 .js:hover {
-	--skill-color: #fddd00;
+	--skill-color: #ecd123;
 }
 .html:hover {
 	--skill-color: #f1662a;
@@ -75,19 +82,31 @@
 	--skill-color: #00d8ff;
 }
 .node:hover {
-	--skill-color: #539e43;
+	--skill-color: #4d923d;
 }
 .fig:hover {
-	--skill-color: #a259ff;
+	--skill-color: #de6262;
 }
 .mon:hover {
-	--skill-color: #41a247;
+	--skill-color: #48b64f;
 }
 .github:hover {
-	--skill-color: #eeab37;
+	--skill-color: black;
 }
 .adobe:hover {
 	--skill-color: #ee3737;
+}
+.Vscode:hover {
+	--skill-color: #1572b6;
+}
+.sass:hover {
+	--skill-color: rgb(185, 97, 202);
+}
+.git:hover {
+	--skill-color: #e05216;
+}
+.bootstrap:hover {
+	--skill-color: #8b32ff;
 }
 
 @media only screen and (max-width: 600px) {

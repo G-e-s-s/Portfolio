@@ -16,50 +16,64 @@ function Timeline() {
             className="vertical-timeline-element--work"
             contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
             contentArrowStyle={{ borderRight: '7px solid  white' }}
-            date="2022 - present"
+            date="2023 - present"
             iconStyle={{ color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Technology Consultant</h3>
-            <h4 className="vertical-timeline-element-subtitle">Dallas, TX</h4>
+            <h3 className="vertical-timeline-element-title">Développeur intégrateur web</h3>
+            <h4 className="vertical-timeline-element-subtitle">OpenClassrooms</h4>
             <p>
-              Full-stack Web Development, GenAI/LLM, Project Management, Business Development
+              \ HTML - CSS <br></br>
+              \ Javascript <br></br>
+              \ Gestion de projet <br></br>
+              \ React <br></br>
+              \ Optimisation et débug <br></br>
+              \ Backend            
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2020 - 2022"
+            date="Avril 2023"
             iconStyle={{ color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Full Stack Engineer</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
+            <h3 className="vertical-timeline-element-title">Stage à Des Sources Studio</h3>
+            <h4 className="vertical-timeline-element-subtitle">Des Sources Studio à Toulon</h4>
             <p>
-              Frontend Development, Backend Development, User Experience, Team Leading
+              / Design graphique, utilisation de logiciel graphique.<br></br>
+              / Réalisation du design et de l'identité visuelle d'un site web, graphisme web.<br></br>
+              / Charte graphique et création de maquettes.<br></br>
+              / Supports de communications digitaux (réseaux sociaux, site internet, …) et éditoriaux avec la suite Adobe (marque-page, affiches, …). <br></br>
+              / Traitement d'images numériques et mise en pages.
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2021 - 2021"
+            date="Mai - Juin 2022"
             iconStyle={{ color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Staff Engineer Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
+            <h3 className="vertical-timeline-element-title">Stage aux Editions "La Gauloise"</h3>
+            <h4 className="vertical-timeline-element-subtitle">Editions "La Gauloise" à Vence</h4>
             <p>
-              Full-stack Development, API Development, User Experience
+            \ Correction et mise en page de manuscrits. <br></br>
+            \ Recherche iconographique, élaboration et rédaction de 4ᵉ de couverture et d'argumentaires.<br></br>
+            \ Préparations et participation aux événements.<br></br>
+            \ Relations avec les auteurs et les points de vente. <br></br>
+            \ Supports de communications digitaux (mailing, réseaux sociaux, site internet, …) et éditoriaux avec la suite Adobe (marque-page, brochures, …).
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2020 - 2020"
+            date="2020 - 2023"
             iconStyle={{ color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Data Analyst Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Tokyo, Japan</h4>
+            <h3 className="vertical-timeline-element-title">Licence de Psychologie</h3>
+            <h4 className="vertical-timeline-element-subtitle">Toulouse, France</h4>
             <p>
-              Automation, Data Governance, Statistical Analysis
+              / Université Jean-Jaurès <br></br>
+              / Diplômée en 2023
             </p>
           </VerticalTimelineElement>
         </VerticalTimeline>

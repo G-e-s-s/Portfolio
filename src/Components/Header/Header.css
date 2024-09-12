@@ -18,9 +18,17 @@
 }
 
 .header.light {
-	background: var(--gradient);
+	/* background: var(--gradient); */
 	color: #f5f5f5;
 	transition: all 1s;
+}
+
+.large {
+	font-size: 12px;
+	width: fit-content;
+	background: var(--gradient);
+	background-clip: text;
+	color: transparent;
 }
 
 .nav h1 {
@@ -35,7 +43,7 @@
 .nav ul li {
 	list-style: none;
 	margin-left: 4rem;
-	border-bottom: solid #f5f5f5;
+	border-bottom: solid;
 	border-image-slice: 1;
 	border-width: 2px;
 	font-size: calc(1vw + 0.5rem);

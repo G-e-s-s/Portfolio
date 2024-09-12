@@ -6,7 +6,7 @@ import { Fade } from 'react-awesome-reveal';
 // components
 import Home from './Pages/Home/Home';
 import Header from './Components/Header/Header';
-import Projects from './Pages/Projects/Projects'
+import Project from './Components/Project/Project'
 import Footer from './Components/Footer/Footer'
 import About from './Components/About/About';
 import Skills from './Pages/Skills/Skills';
@@ -33,7 +33,7 @@ function App() {
           <Skills />
         </Fade>
         <Fade fraction={.3} triggerOnce>
-          <Projects />
+          <Project />
         </Fade>
       </div>
       <div>
