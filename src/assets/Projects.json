@@ -1,26 +1,34 @@
 [
     {
-      "name": "Intégration ",
-      "desc": "congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed",
+      "name": "Intégration web",
+      "desc": "Création de la page d'accueil d'une agence de voyage avec HTML & CSS, en versionnant le projet avec Git et Github. Intégration du contenu conformément à la maquette donnée sur Figma, tout en implémentant une interface responsive.",
       "liveLink": "website url",
-      "githubLink": "https://github.com/",
-      "techs": ["HTML", "CSS", "TypeScript"],
+      "githubLink": "https://github.com/G-e-s-s/OC_Projet1_Booki.git",
+      "techs": ["HTML", "CSS", "Git", "GitHub", "Figma", "Responsive", "Accessibilité", "Référencement"],
       "isOpenSource": true
     },
     {
-      "name": "Project 2",
-      "desc": "congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed",
-      "liveLink": "website url",
-      "githubLink": "https://github.com/",
-      "techs": ["React", "Node", "MongoDB", "Socket.io", "Redux"],
-      "isOpenSource": true
+        "name": "Optimisation et débug",
+        "desc": "Débugger et optimiser le site de la photographe Nina Carducci, grâce aux Chrome DevTools. Utilisation des principes de base SEO et de l'accessibilité. Création d'un rapport d'optimisation, illustrant les résultats avant et après les modifications",
+        "liveLink": "https://g-e-s-s.github.io/OC_Projet_3_D-bug/",
+        "githubLink": "https://github.com/G-e-s-s/OC_Projet_3_D-bug.git",
+        "techs": ["DevTools", "HTML", "CSS", "SEO", "Lighthouse", "GTMetrix", "W3C", "Accessibilité", "Référencement"],
+        "isOpenSource": true
     },
     {
-        "name": "Project 2",
+        "name": "React",
         "desc": "congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed",
         "liveLink": "website url",
         "githubLink": "https://github.com/",
-        "techs": ["React", "Node", "MongoDB", "Socket.io", "Redux"],
+        "techs": ["React", "JavaScript", "React App", "Node.JS", "Sass", "CSS"],
         "isOpenSource": true
-      }
+    },
+    {
+        "name": "Développement Backend",
+        "desc": "congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed",
+        "liveLink": "website url",
+        "githubLink": "https://github.com/",
+        "techs": ["Node.JS", "MongoDB", "Express", "Mongoose", "Green Code"],
+        "isOpenSource": true
+    }
 ]
