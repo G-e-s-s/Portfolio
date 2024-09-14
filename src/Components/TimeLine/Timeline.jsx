@@ -20,15 +20,16 @@ function Timeline() {
             iconStyle={{ color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Développeur intégrateur web</h3>
-            <h4 className="vertical-timeline-element-subtitle">OpenClassrooms</h4>
+            <h2 className="vertical-timeline-element-title">Développeur intégrateur web</h2>
+            <h3 className="vertical-timeline-element-subtitle">OpenClassrooms</h3>
             <p>
               \ HTML - CSS <br></br>
               \ Javascript <br></br>
               \ Gestion de projet <br></br>
               \ React <br></br>
-              \ Optimisation et débug <br></br>
-              \ Backend            
+              \ Optmisation SEO et performances du site <br></br>
+              \ Acessibilité et référencement <br></br>
+              \ Express et Node JS           
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
@@ -37,8 +38,8 @@ function Timeline() {
             iconStyle={{ color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Stage à Des Sources Studio</h3>
-            <h4 className="vertical-timeline-element-subtitle">Des Sources Studio à Toulon</h4>
+            <h2 className="vertical-timeline-element-title">Stage à Des Sources Studio</h2>
+            <h3 className="vertical-timeline-element-subtitle">Des Sources Studio à Toulon</h3>
             <p>
               / Design graphique, utilisation de logiciel graphique.<br></br>
               / Réalisation du design et de l'identité visuelle d'un site web, graphisme web.<br></br>
@@ -53,8 +54,8 @@ function Timeline() {
             iconStyle={{ color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Stage aux Editions "La Gauloise"</h3>
-            <h4 className="vertical-timeline-element-subtitle">Editions "La Gauloise" à Vence</h4>
+            <h2 className="vertical-timeline-element-title">Stage aux Editions "La Gauloise"</h2>
+            <h3 className="vertical-timeline-element-subtitle">Editions "La Gauloise" à Vence</h3>
             <p>
             \ Correction et mise en page de manuscrits. <br></br>
             \ Recherche iconographique, élaboration et rédaction de 4ᵉ de couverture et d'argumentaires.<br></br>
@@ -69,8 +70,8 @@ function Timeline() {
             iconStyle={{ color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Licence de Psychologie</h3>
-            <h4 className="vertical-timeline-element-subtitle">Toulouse, France</h4>
+            <h2 className="vertical-timeline-element-title">Licence de Psychologie</h2>
+            <h3 className="vertical-timeline-element-subtitle">Toulouse, France</h3>
             <p>
               / Université Jean-Jaurès <br></br>
               / Diplômée en 2023

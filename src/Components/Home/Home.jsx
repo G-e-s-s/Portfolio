@@ -1,17 +1,17 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef } from 'react';
 
-import '../Home/Home.css'
+import '../Home/Home.css';
 
 import TypeWriterEffect from 'react-typewriter-effect';
 import { animateScroll } from 'react-scroll';
 import { Link } from 'react-scroll';
 
-import { GiButterflyFlower } from 'react-icons/gi'
+import { GiButterflyFlower } from 'react-icons/gi';
 
 
 const Home = () => {
   const [number, setNumber] = useState(0);
-  const arrayOfWords = ['Bonjour', "Vous m'avez trouvé", 'Bienvenue sur mon portfolio', 'Contactez moi', 'Enjoy'];
+  const arrayOfWords = ['Bonjour', "Vous m'avez trouvé", 'Bienvenue sur mon portfolio', 'Contactez moi'];
   const textContent = useRef();
 
   const handleChange = () => {
@@ -33,12 +33,12 @@ const Home = () => {
     <div className='home' id='home'>
       <div className="home-text">
         <h1 className='name'>
-          <span className='gradientText'>
+          <h2 className='gradientText'>
             Gessica Goublet
-          </span>
+          </h2>
           <span>
             <span onClick={handleChange}>
-            <div className='flower'>
+            <div className='flower' alt="flower">
               < GiButterflyFlower />
             </div>
             </span>

@@ -30,6 +30,9 @@ const Nav = ({ isDarkMode, handleToggle }) => {
       <li><Link onClick={handleClick} activeClass="active" to="socials" spy={true} smooth={true} offset={0} duration={500}>
         Contact
       </Link></li>
+      <a className='cv' href='https://acrobat.adobe.com/id/urn:aaid:sc:EU:5c22772a-a6db-41be-b00e-39628b29a75a' target='_blank' rel='noreferrer'>
+        CV
+      </a>
     </ul>
 
   return (
@@ -40,7 +43,7 @@ const Nav = ({ isDarkMode, handleToggle }) => {
             <Container>
               <Row>
                 <Col xs={6} md={4}>
-                  <Image src={photoProfil} className='roundedCircle'/>
+                  <Image src={photoProfil} className='roundedCircle' alt="Developper (myself)"/>
                 </Col>
               </Row>
             </Container>          

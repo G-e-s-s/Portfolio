@@ -1,76 +1,77 @@
 import React from 'react'
 
-import '../Skills/Skills.css'
+import '../../Components/Skills/Skills.css';
 
 //icons
 import { SiJavascript, SiHtml5, SiCss3, SiReact, SiNodedotjs, SiFigma, SiMongodb, SiGithub, SiNotion, SiCanva, SiAdobe, SiSass, SiReactbootstrap } from 'react-icons/si';
 import { VscVscode } from "react-icons/vsc";
 import { FaGitAlt } from "react-icons/fa";
+import { RiStarSFill } from "react-icons/ri";
 
 const Skills = () => {
   return (
     <div className='skills'>
-      <h2>My Skills</h2>
+      <h2>Mes Compétences</h2>
       <div className="skill">
         <div className="html">
           <SiHtml5 />
-          <p>HTML ⭐⭐⭐</p>
+          <p>HTML</p><div className='star'><RiStarSFill /><RiStarSFill /></div>
         </div>
         <div className="css">
           <SiCss3 />
-          <p>CSS ⭐⭐⭐</p>
+          <p>CSS</p><div className='star'><RiStarSFill /><RiStarSFill /></div>
         </div>
         <div className="js">
           <SiJavascript />
-          <p>JavaScript ⭐⭐</p>
+          <p>JavaScript </p><div className='star'><RiStarSFill /></div>
         </div>
         <div className="github">
           <SiGithub />
-          <p>Github ⭐⭐⭐</p>
+          <p>Github </p><div className='star'><RiStarSFill /><RiStarSFill /></div>
         </div>
         <div className="git">
           <FaGitAlt />
-          <p>Git ⭐⭐⭐</p>
+          <p>Git </p><div className='star'><RiStarSFill /><RiStarSFill /></div>
         </div>
         <div className="node">
           <SiNodedotjs />
-          <p>Node JS ⭐⭐</p>
+          <p>Node JS </p><div className='star'><RiStarSFill /></div>
         </div>
         <div className="react">
           <SiReact />
-          <p>React ⭐⭐</p>
+          <p>React </p><div className='star'><RiStarSFill /></div>
         </div>
         <div className="mon">
           <SiMongodb />
-          <p>MongoDB ⭐</p>
+          <p>MongoDB </p><div className='star'><RiStarSFill /></div>
         </div>
         <div className="fig">
           <SiFigma />
-          <p>Figma ⭐⭐⭐</p>
+          <p>Figma </p><div className='star'><RiStarSFill /><RiStarSFill /><RiStarSFill /></div>
         </div>
         <div className="notion">
           <SiNotion />
-          <p>Notion ⭐⭐⭐</p>
+          <p>Notion </p><div className='star'><RiStarSFill /><RiStarSFill /><RiStarSFill /></div>
         </div>
         <div className="canva">
           <SiCanva />
-          <p>Canva ⭐⭐⭐</p>
+          <p>Canva </p><div className='star'><RiStarSFill /><RiStarSFill /><RiStarSFill /></div>
         </div>
         <div className="adobe">
           <SiAdobe />
-          <p>Adobe ⭐⭐</p>
+          <p>Adobe </p><div className='star'><RiStarSFill /><RiStarSFill /></div>
         </div>
         <div className="Vscode">
           <VscVscode />
-          <p>Vscode ⭐⭐⭐</p>
+          <p>Vscode </p><div className='star'><RiStarSFill /><RiStarSFill /><RiStarSFill /></div>
         </div>
         <div className="sass">
           <SiSass />
-          <p>Sass ⭐⭐</p>
+          <p>Sass </p><div className='star'><RiStarSFill /><RiStarSFill /></div>
         </div>
         <div className="bootstrap">
           <SiReactbootstrap />
-          <p>Bootstrap ⭐</p>
+          <p>Bootstrap </p><div className='star'><RiStarSFill /></div>
         </div>
       </div>
     </div>

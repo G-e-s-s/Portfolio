@@ -1,6 +1,6 @@
 :root {
 	--container-width: 650px;
-	--skill-size: calc(var(--container-width) / 5);
+	--skill-size: calc(var(--container-width) / 4);
 	--gradient: linear-gradient(to bottom, #05BECD, #3A7DD9);
 }
 
@@ -20,12 +20,13 @@
 .skill {
 	display: flex;
 	flex-wrap: wrap;
-	margin-bottom: 50px;
+	margin: 0 0 50px 35px;
+	align-items: center;
 	justify-content: space-around;
 }
 
-.skill div {
-	margin-right: 20px;
+.html, .css, .js, .github, .git, .node, .react, .mon, .fig, .notion, .canva, .adobe, .Vscode, .sass, .bootstrap {
+	margin-right: 30px;
 	margin-bottom: 20px;
 	min-height: var(--skill-size);
 	width: var(--skill-size);
@@ -39,15 +40,24 @@
 .skill p {
 	color: var(--skill-color, #6253e8);
 	font-weight: 600;
-	margin-bottom: -2px;
 }
 
-.skill div svg {
+.skill svg {
 	min-height: calc(var(--skill-size) - 40px);
 	width: calc(var(--skill-size) - 40px);
 	color: var(--skill-color, #6253e8);
 	transition: all 390ms ease-in-out;
-	margin-bottom: -5px;
+}
+.star {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	max-height: calc(var(--skill-size) - 60px);
+}
+.star svg {
+	width: 35px;
+	min-height: calc(var(--skill-size) - 130px);
+	color: var(--skill-color, #e1c300);
 }
 
 .light .skill p {
@@ -61,6 +71,17 @@
 	min-height: calc(var(--skill-size) - 40px);
 	width: calc(var(--skill-size) - 40px);
 
+}
+.light .star {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	max-height: calc(var(--skill-size) - 60px);
+}
+.light .star svg {
+	width: 35px;
+	min-height: calc(var(--skill-size) - 130px);
+	color: var(--skill-color, #ffdd00);
 }
 
 .js:hover {
@@ -111,16 +132,25 @@
 
 @media only screen and (max-width: 600px) {
 	:root {
-		--container-width: 500px;
+		--container-width: 450px;
+	}
+	.skill {
+		margin-left: 20px;
+	}
+	.skill p {
+		margin: 20px 10px 0 10px;
+	}
+	.star svg {
+		margin-top: 0;
+		min-height: calc(var(--skill-size) - 60px);
 	}
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 400px) {
 	:root {
-		--container-width: 380px;
+		--container-width: 350px;
 	}
-}
-@media only screen and (max-width: 350px) {
-	:root {
-		--container-width: 300px;
+	.skill p {
+		padding: 10px 0px;
+		margin: 0;
 	}
 }

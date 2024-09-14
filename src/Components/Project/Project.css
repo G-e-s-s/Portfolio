@@ -1,5 +1,5 @@
 :root {
-	--project-width: 250px;
+	--project-width: 310px;
 	--border-radius: 10px;
 	--blob-left: 238px;
 }
@@ -15,6 +15,7 @@
 	background: var(--gradient);
 	background-clip: text;
 	color: transparent;
+	margin: 0 0 40px 0;
 }
 
 .projects > div {
@@ -22,6 +23,7 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 	margin-bottom: 2rem;
+	justify-content: space-around;
 }
 
 .project {
@@ -60,11 +62,11 @@
 }
 
 .project .tech-stack div {
-	min-height: 20px;
-	min-width: 60px;
-	max-height: 20px;
-	max-width: 60px;
-	font-size: 0.6rem;
+	min-height: 25px;
+	min-width: 80px;
+	max-height: 25px;
+	max-width: 80px;
+	font-size: 0.7rem;
 	padding: 0.4rem;
 	margin: 0 0.5rem 0.25rem 0;
 	display: grid;
@@ -94,30 +96,21 @@
 	margin-bottom: 1rem;
 }
 
-.open {
-	background: rgb(245, 242, 245);
-	min-height: calc(var(--project-width) / 4.1);
-	min-width: calc(var(--project-width) / 4.1);
-	max-height: calc(var(--project-width) / 4.1);
-	max-width: calc(var(--project-width) / 4.1);
-	border-radius: 50% 10px 50% 50%;
-	position: absolute;
-	color: rgb(34, 33, 52);
-	display: grid;
-	place-items: center;
-	top: 0;
-	left: var(--blob-left);
-	font-size: calc(var(--project-width) / 26);
-	text-align: center;
-}
-
-@media screen and (max-width: 430px) {
-	:root {
-		--project-width: 200px;
-		--blob-left: 200px;
+@media only screen and (max-width: 1400px) {
+	.projects > div {
+		margin-left: 0%;
 	}
-
 	.project {
-		margin: 0 0 2rem 0;
+		max-width: 350px;
+		margin-right: 10px;
+	}
+}
+@media only screen and (max-width: 1200px) {
+	.projects > div {
+		margin-left: 0%;
+	}
+	.project {
+		max-width: 1200px;
+		margin-right: 0px;
 	}
 }

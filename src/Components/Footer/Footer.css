@@ -23,7 +23,7 @@
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
-	margin: 0 88px;
+	margin: 0 200px;
 }
 
 .social div {
@@ -81,6 +81,14 @@
 	color: black !important;
 }
 
+.light .git {
+	--social-main-color: black;
+}
+
+.light .git a {
+	color: white !important;
+}
+
 .mail {
 	--social-main-color: rgb(193, 53, 53);
 }
@@ -122,6 +130,13 @@
 	background: var(--gradient);
 	background-clip: text;
 	color: transparent;
+}
+
+@media only screen and (max-width: 1400px) {
+	.social {
+		margin: 0px;
+		justify-content: center;
+	}
 }
 
 @media only screen and (max-width: 386px) {
