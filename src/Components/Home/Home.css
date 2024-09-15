@@ -21,6 +21,7 @@
 	background: var(--gradient);
 	background-clip: text;
 	color: transparent;
+	font-size: calc(1vw + 3rem);
 }
 
 .home-text h1 span:last-of-type span:first-of-type {
@@ -123,6 +124,9 @@
 	.react-typewriter-text-wrap {
 		margin-top: -1.5rem;
 	}
+	.gradientText {
+		font-size: 50px;
+	}
 }
 
 @media only screen and (max-width: 900px) and (min-width: 800px) {
@@ -189,6 +193,9 @@
 		width: 130px;
 		font-weight: 300;
 	}
+	.gradientText {
+		font-size: 40px;
+	}
 }
 
 @media only screen and (max-width: 500px) {
@@ -200,5 +207,8 @@
 	}
 	.btn1 {
 		width: 120px;
+	}
+	.gradientText {
+		font-size: 30px;
 	}
 }
