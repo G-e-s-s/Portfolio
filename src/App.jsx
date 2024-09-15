@@ -1,5 +1,3 @@
-import '../src/assets/styles/App.css';
-
 import {Routes, Route} from 'react-router-dom';
 
 // components

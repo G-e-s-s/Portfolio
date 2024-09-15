@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Fade } from 'react-awesome-reveal';
+import '../Portfolio/Portfolio.css';
 
 // components
 import Header from '../../Components/Header/Header';

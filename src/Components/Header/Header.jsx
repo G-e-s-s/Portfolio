@@ -8,7 +8,7 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
-import photoProfil from "../../assets/file.1.webp"
+import photoProfil from "../../assets/Gessica_Goublet.webp"
 
 import '../Header/Header.css'
 
@@ -21,25 +21,24 @@ const Nav = ({ isDarkMode, handleToggle }) => {
 
   const nav =
     <ul style={{ pointerEvents: 'auto' }}>
-      <li><Link onClick={handleClick} activeClass="active" to="about" spy={true} smooth={true} offset={-80} duration={500}>
+      <li><Link rel="stylesheet" onClick={handleClick} activeClass="active" to="about" spy={true} smooth={true} offset={-80} duration={500}>
         A propos
       </Link></li>
-      <li><Link onClick={handleClick} activeClass="active" to="projects" spy={true} smooth={true} offset={-80} duration={500}>
+      <li><Link rel="stylesheet" onClick={handleClick} activeClass="active" to="projects" spy={true} smooth={true} offset={-80} duration={500}>
         Projets
       </Link></li>
-      <li><Link onClick={handleClick} activeClass="active" to="socials" spy={true} smooth={true} offset={0} duration={500}>
+      <li><Link rel="stylesheet" onClick={handleClick} activeClass="active" to="socials" spy={true} smooth={true} offset={0} duration={500}>
         Contact
       </Link></li>
-      <a className='cv' href='https://acrobat.adobe.com/id/urn:aaid:sc:EU:5c22772a-a6db-41be-b00e-39628b29a75a' target='_blank' rel='noreferrer'>
+      <li><a className='cv' href='https://acrobat.adobe.com/id/urn:aaid:sc:EU:5c22772a-a6db-41be-b00e-39628b29a75a' target='_blank' rel='noreferrer'>
         CV
-      </a>
+      </a></li>
     </ul>
 
   return (
     <div className='nav'>
       <div className={`header ${!isDarkMode ?'light' : ''}`}>
         <h1>
-          <Link activeClass="active" to="home" spy={true} smooth={true} offset={-80} duration={500}>
             <Container>
               <Row>
                 <Col xs={6} md={4}>
@@ -47,7 +46,6 @@ const Nav = ({ isDarkMode, handleToggle }) => {
                 </Col>
               </Row>
             </Container>          
-          </Link>
         </h1>
         <div className="menu-and-theme">
           <div onClick={handleClick} className="menu">

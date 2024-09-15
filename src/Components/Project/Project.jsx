@@ -10,7 +10,8 @@ const Project = () => {
         {projectsInfo.map((project,index) => (
           <div className="project" key={index}>
             <h2>{project.name}</h2>
-            <p>{project.desc}</p>
+            <p>{project.desc}</p> <br></br>
+            <p>{project.pb}</p>
             <div className="tech-stack">
               {project.techs.map((tech,index) => (
                 <div key={index}>{tech}</div>

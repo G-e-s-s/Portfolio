@@ -6,7 +6,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding-top: 10rem;
+	padding-top: 5rem;
 	padding-bottom: 55px;
 	position: relative;
 }
@@ -133,7 +133,6 @@
 	.home {
 		padding-top: 8rem;
 	}
-
 	.home-text h1 span:last-of-type span:last-of-type {
 		left: 250px;
 		top: 145px;
@@ -153,7 +152,6 @@
 	.home {
 		padding-top: 8rem;
 	}
-
 	.home-text h1 span:last-of-type span:last-of-type {
 		left: 280px;
 		top: 145px;
@@ -163,9 +161,8 @@
 
 @media only screen and (max-width: 600px) {
 	.home {
-		padding-top: 10rem;
+		padding-top: 8rem;
 	}
-
 	.home-text h1 span:last-of-type span:last-of-type {
 		left: 200px;
 		top: 155px;
@@ -199,6 +196,9 @@
 }
 
 @media only screen and (max-width: 500px) {
+	.home {
+		padding-top: 8rem;
+	}
 	.home-text h1 span:last-of-type span:last-of-type {
 		top: 140px;
 		left: 63px;

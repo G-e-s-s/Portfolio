@@ -48,16 +48,7 @@
 }
 .cv {
 	text-decoration: none;
-	margin-left: 3rem;
-	border-bottom: solid transparent;
-	border-image-slice: 1;
-	border-width: 2px;
-	font-size: calc(1vw + 10px);
 	color: transparent;
-}
-.cv:hover{
-	cursor: pointer;
-	border-image-source: linear-gradient(to right, #6253e8, #1da1f2);
 }
 
 .nav ul li:hover,
@@ -105,10 +96,6 @@
 @media only screen and (max-width: 930px) {
 	.nav ul li {
 		margin-left: 1rem;
-		font-weight: 500;
-	}
-	.cv {
-		margin-left: 1rem;	
 		font-weight: 500;
 	}
 }
@@ -168,10 +155,6 @@
 		border-bottom: transparent;
 	}
 	.cv {
-		margin-left: 0;
-		width: fit-content;
-		text-align: center;
-		font-size: calc(1vw + 1rem);
 		color: white;
 	}
 
@@ -190,10 +173,6 @@
 }
 @media only screen and (max-width: 600px) {
 	.small ul li {
-		font-size: calc(1vw + 13px);
-		font-weight: 500;
-	}
-	.cv {
 		font-size: calc(1vw + 13px);
 		font-weight: 500;
 	}

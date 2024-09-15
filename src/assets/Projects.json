@@ -2,29 +2,25 @@
     {
       "name": "Intégration web",
       "desc": "Création de la page d'accueil d'une agence de voyage avec HTML & CSS, en versionnant le projet avec Git et Github. Intégration du contenu conformément à la maquette donnée sur Figma, tout en implémentant une interface responsive.",
-      "liveLink": "website url",
+      "pb": "Les complications que j'ai rencontrées durant ce projet étaient, au départ, l'utilisation de Git. Je n'arrivais pas à faire la configuration, créer et initialiser un dépôt local. Cependant avec de la pratique et plusieurs essais j'ai pris Git en main. J'avais aussi du mal à utiliser Flexbox, mais avec le jeu Flexbox Froggy cela m'a permis de maîtriser ces propriétés.",
+      "liveLink": "https://github.com/G-e-s-s/OC_Projet1_Booki.git",
       "githubLink": "https://github.com/G-e-s-s/OC_Projet1_Booki.git",
       "techs": ["HTML", "CSS", "Git", "GitHub", "Figma", "Responsive", "Accessibilité", "Référencement"]
     },
     {
         "name": "Optimisation et débug",
         "desc": "Débugger et optimiser le site de la photographe Nina Carducci, grâce aux Chrome DevTools. Utilisation des principes de base SEO et de l'accessibilité. Création d'un rapport d'optimisation, illustrant les résultats avant et après les modifications",
+        "pb": "Pour ce projet, la modale de la galerie entre les images précédentes et les images suivantes ne fonctionnait pas. Pour cela, j'ai mis du temps à trouver ce qu'il fallait ajouter ou changer dans le code. De même, lorsque l’on changeait de filtre pour afficher les images, on ne voyait pas quelle catégorie était sélectionnée. Pour résoudre cela, il fallait ajouter au CSS le nom de la fonction correspondante aux filtres.",
         "liveLink": "https://g-e-s-s.github.io/OC_Projet_3_D-bug/",
         "githubLink": "https://github.com/G-e-s-s/OC_Projet_3_D-bug.git",
         "techs": ["DevTools", "HTML", "CSS", "SEO", "Lighthouse", "GTMetrix", "W3C", "Accessibilité", "Référencement"]
     },
     {
         "name": "React",
-        "desc": "congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed",
-        "liveLink": "website url",
-        "githubLink": "https://github.com/",
-        "techs": ["React", "JavaScript", "React App", "Node.JS", "Sass", "CSS"]
-    },
-    {
-        "name": "Développement Backend",
-        "desc": "congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed",
-        "liveLink": "website url",
-        "githubLink": "https://github.com/",
-        "techs": ["Node.JS", "MongoDB", "Express", "Mongoose", "Green Code"]
+        "desc": "Implémentation du front-end pour l'application d'une entreprise de location d’appartements entre particuliers, en utilisant React et React Router pour créer une expérience utilisateur moderne et réactive.",
+        "pb": "Créer des composants pour pouvoir les réutiliser était nouveau pour moi, je me suis donc un peu attarder dessus, en réfléchissant bien aux composants qui peuvent être réutilisés. La navigation entre les pages de l'application avec React Router, m'a parru compliquée au départ, seulement une fois la logique comprise, j'ai trouvé que ça permet d'organiser le site.",
+        "liveLink": "https://github.com/G-e-s-s/OC_Projet_4_React.git",
+        "githubLink": "https://github.com/G-e-s-s/OC_Projet_4_React.git",
+        "techs": ["React","React Router", "JavaScript", "React App", "Node.JS", "Sass", "CSS"]
     }
 ]
