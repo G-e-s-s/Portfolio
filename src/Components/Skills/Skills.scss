@@ -1,0 +1,152 @@
+:root {
+	--container-width:650px;
+	--skill-size:calc(var(--container-width) / 4);
+	--gradient:linear-gradient(to bottom, #05BECD, #3A7DD9);
+}
+.skills {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	h2 {
+		margin: 0 0 30px 0;
+		width: fit-content;
+		background: var(--gradient);
+		background-clip: text;
+		color: transparent;
+	}
+}
+.skill {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 0 50px 35px;
+	align-items: center;
+	justify-content: space-around;
+}
+.html, .css, .js, .github, .git, .node, .react, .mon, .fig, .notion, .canva, .adobe, .Vscode, .sass, .bootstrap {
+	margin-right: 30px;
+	margin-bottom: 20px;
+	min-height: var(--skill-size);
+	width: var(--skill-size);
+	background-color: #ffffffe6;
+	display: grid;
+	place-items: center;
+	padding: 5px;
+	border-radius: 20px;
+}
+.skill {
+	p {
+		color: var(--skill-color, #6253e8);
+		font-weight: 600;
+	}
+	svg {
+		min-height: calc(var(--skill-size) - 40px);
+		width: calc(var(--skill-size) - 40px);
+		color: var(--skill-color, #6253e8);
+		transition: all 390ms ease-in-out;
+	}
+}
+.star {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	max-height: calc(var(--skill-size) - 60px);
+	svg {
+		width: 35px;
+		min-height: calc(var(--skill-size) - 130px);
+		color: var(--skill-color, #e1c300);
+	}
+}
+.light {
+	.skill {
+		p {
+			color: var(--skill-color, #1196d9e2);
+			transition: all 0.5s;
+		}
+		svg {
+			color: var(--skill-color, #1196d9e2);
+			transition: all 0.5s;
+			min-height: calc(var(--skill-size) - 40px);
+			width: calc(var(--skill-size) - 40px);
+		}
+	}
+	.star {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		max-height: calc(var(--skill-size) - 60px);
+		svg {
+			width: 35px;
+			min-height: calc(var(--skill-size) - 130px);
+			color: var(--skill-color, #ffdd00);
+		}
+	}
+}
+.js:hover {
+	--skill-color:#ecd123;
+}
+.html:hover {
+	--skill-color:#f1662a;
+}
+.canva:hover {
+	--skill-color:#6253e8;
+}
+.notion:hover {
+	--skill-color:black;
+}
+.css:hover {
+	--skill-color:#1572b6;
+}
+.react:hover {
+	--skill-color:#00d8ff;
+}
+.node:hover {
+	--skill-color:#4d923d;
+}
+.fig:hover {
+	--skill-color:#de6262;
+}
+.mon:hover {
+	--skill-color:#48b64f;
+}
+.github:hover {
+	--skill-color:black;
+}
+.adobe:hover {
+	--skill-color:#ee3737;
+}
+.Vscode:hover {
+	--skill-color:#1572b6;
+}
+.sass:hover {
+	--skill-color:rgb(185, 97, 202);
+}
+.git:hover {
+	--skill-color:#e05216;
+}
+.bootstrap:hover {
+	--skill-color:#8b32ff;
+}
+@media only screen and (max-width: 600px) {
+	:root {
+		--container-width:450px;
+	}
+	.skill {
+		margin-left: 20px;
+		p {
+			margin: 20px 10px 0 10px;
+		}
+	}
+	.star svg {
+		margin-top: 0;
+		min-height: calc(var(--skill-size) - 60px);
+	}
+}
+@media only screen and (max-width: 400px) {
+	:root {
+		--container-width:350px;
+	}
+	.skill p {
+		padding: 10px 0px;
+		margin: 0;
+	}
+}  

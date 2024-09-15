@@ -1,0 +1,47 @@
+.items-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h1 {
+        margin: 30px;
+        width: fit-content;
+        background: var(--gradient);
+        background-clip: text;
+        color: transparent;
+    }
+}
+.vertical-timeline {
+    margin: 0 auto 40px auto;
+}
+.vertical-timeline-element-icon {
+    font-family: 'Courier Prime', monospace;
+    background: linear-gradient(to bottom, #05BECD, #3A7DD9);
+}
+.vertical-timeline-element-date {
+    width: fit-content;
+    background: var(--gradient);
+    background-clip: text;
+    color: transparent;
+}
+.vertical-timeline-element {
+    h3, h4 {
+        width: fit-content;
+        background: var(--gradient);
+        background-clip: text;
+        color: transparent;
+    }
+}
+.vertical-timeline p, .vertical-timeline-element p, .vertical-timeline-element-icon {
+    color: rgb(39, 40, 34);
+}
+.vertical-timeline::before {
+    height: 98%;
+}
+.vertical-timeline-element, .svg-inline--fa {
+    color: white;
+}
+@media screen and (max-width: 1170px) {
+    .vertical-timeline-element {
+        color: rgb(39, 40, 34);
+    }
+}  

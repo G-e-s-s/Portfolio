@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 
-import '../Home/Home.css';
+import '../Home/Home.scss';
 
 import TypeWriterEffect from 'react-typewriter-effect';
 import { animateScroll } from 'react-scroll';
@@ -32,21 +32,21 @@ const Home = () => {
   return (
     <div className='home' id='home'>
       <div className="home-text">
-        <h1 className='name'>
-          <h2 className='gradientText'>
+        <div className='name'>
+          <h1 className='gradientText'>
             Gessica Goublet
-          </h2>
+          </h1>
           <span>
             <span onClick={handleChange}>
             <div className='flower' alt="flower">
               < GiButterflyFlower />
             </div>
             </span>
-            <span ref={textContent} style={{ display: 'none' }}>
+            <p ref={textContent} style={{ display: 'none' }} className="textFlower">
               Bonjour
-            </span>
+            </p>
           </span>
-        </h1>
+        </div>
         <TypeWriterEffect
           cursorColor="#1da1f2"
           multiText={[

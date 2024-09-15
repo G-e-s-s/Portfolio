@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Fade } from 'react-awesome-reveal';
-import '../Portfolio/Portfolio.css';
+import '../Portfolio/Portfolio.scss';
 
 // components
 import Header from '../../Components/Header/Header';
@@ -22,24 +22,24 @@ function Portfolio() {
     <div className={`App ${!isDarkMode ?'light' : ''}`}>
       {<Header isDarkMode={isDarkMode} handleToggle={toggleTheme}/>}
           {<Home/>}
-        <Fade fraction={.3} triggerOnce>
+        <Fade fraction={.2} triggerOnce>
           {<About/>}
         </Fade>
       <div className={`dark ${!isDarkMode ?'light' : ''}`}>
-        <Fade fraction={.3} triggerOnce>
+        <Fade fraction={.2} triggerOnce>
           {<Skills/>}
         </Fade>
-        <Fade fraction={.3} triggerOnce>
+        <Fade fraction={.2} triggerOnce>
           {<Project/>}
         </Fade>
       </div>
       <div>
-        <Fade fraction={.3} triggerOnce>
+        <Fade fraction={.2} triggerOnce>
           {<Timeline/>}
         </Fade>
       </div>
       <div className={`dark ${!isDarkMode ?'light' : ''}`}>
-        <Fade fraction={.3} triggerOnce>
+        <Fade fraction={.2} triggerOnce>
           {<Footer/>}
         </Fade>
       </div>

@@ -1,7 +1,6 @@
 :root {
-	--padding-width: 10rem;
+	--padding-width:10rem;
 }
-
 .header {
 	position: fixed;
 	left: -0px;
@@ -15,72 +14,66 @@
 	align-items: center;
 	justify-content: space-between;
 	background-color: #232135;
+		&.light {
+		color: #f5f5f5;
+		transition: all 1s;
+		}
 }
-
-.header.light {
-	color: #f5f5f5;
-	transition: all 1s;
-}
-
 .large {
+	display: flex;
 	font-size: 12px;
 	width: fit-content;
 	background: var(--gradient);
 	background-clip: text;
 	color: transparent;
 }
-
-.nav h1 {
-	font-size: calc(1vw + 1.3rem);
-	cursor: pointer;
-}
-.nav ul {
+.nav {
+	h1 {
+		font-size: calc(1vw + 1.3rem);
+		cursor: pointer;
+	}
+	ul {
 	display: flex;
-}
-
-.nav ul li {
-	list-style: none;
-	margin-left: 3rem;
-	border-bottom: solid;
-	border-image-slice: 1;
-	border-width: 2px;
-	font-size: calc(1vw + 10px);
+		li {
+			list-style: none;
+			margin-left: 3rem;
+			border-bottom: solid;
+			border-image-slice: 1;
+			border-width: 2px;
+			font-size: calc(1vw + 10px);
+		}
+	}
 }
 .cv {
 	text-decoration: none;
 	color: transparent;
 }
-
-.nav ul li:hover,
-.nav ul li:active {
+.nav ul li {
+	&:hover, &:active {
 	cursor: pointer;
 	border-image-source: linear-gradient(to right, #6253e8, #1da1f2);
+	}
 }
-
-.menu-and-theme{
+.menu-and-theme {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
-
-.theme-switch{
+.theme-switch {
 	margin-left: 3rem;
 	background: transparent !important;
 	transition: all 0.6s;
 	cursor: pointer;
+		> svg {
+		color: #fff;
+		width: 1.2rem;
+		height: 1.2rem;
+		transition: all 1s;
+		}
 }
-
-.theme-switch > svg{
-	color: #fff;
-	width: 1.2rem;
-	height: 1.2rem;
-	transition: all 1s;
-}
-
 .menu {
 	display: none;
 }
-
 .roundedCircle {
 	width: 100px;
 	height: 100px;
@@ -88,95 +81,84 @@
 	background: linear-gradient(to right, #6253e8, #1da1f2);
 	object-fit: cover;
 }
-
 .light .roundedCircle {
-	background: linear-gradient(to bottom left, rgba(68,146,163,1), rgba(251,226,168,1), rgba(248,149,134,1));
+	background: linear-gradient(to bottom left, rgba(68, 146, 163, 1), rgba(251, 226, 168, 1), rgba(248, 149, 134, 1));
 }
-
 @media only screen and (max-width: 930px) {
 	.nav ul li {
 		margin-left: 1rem;
 		font-weight: 500;
 	}
 }
-
 @media only screen and (max-width: 800px) {
 	:root {
-		--padding-width: 2.5rem;
+		--padding-width:2.5rem;
 	}
-
-	.large {
-		display: none;
-	}
-
 	.menu {
 		display: block;
 		z-index: 100;
 		cursor: pointer;
 	}
-
 	.light .menu {
-		color: rgba(68,146,163,1);
+		color: rgba(68, 146, 163, 1);
 		width: 10px;
 	}
-
 	.menu-and-theme {
 		gap: 3rem;
 	}
-
 	.small {
+		display: flex;
 		position: fixed;
 		max-height: 10%;
 		justify-content: center !important;
 		align-items: center !important;
 		left: 0;
-		top: 158px;
+		top: 125px;
 		min-width: 100%;
 		background: linear-gradient(to bottom left, #3A7DD9, #4C4CB3, #5D38B7);
 		z-index: 16;
+		color: white;
 	}
-
-	.light .small{
-		background: linear-gradient(to bottom left, rgba(68,146,163,1), rgba(251,226,168,1), rgba(248,149,134,1));
+	.light .small {
+		background: linear-gradient(to bottom left, rgba(68, 146, 163, 1), rgba(251, 226, 168, 1), rgba(248, 149, 134, 1));
 		color: #fff;
 	}
-
-	.small > ul {
-		flex-direction: row;
-		gap: 40px;
-		padding: 0;
-	}
-
-	.small ul li {
-		margin-left: 0;
-		width: fit-content;
-		text-align: center;
-		font-size: calc(1vw + 1rem);
-		border-bottom: transparent;
+	.small {
+		> ul {
+			flex-direction: row;
+			gap: 40px;
+			padding: 0;
+		}
+		ul li {
+			margin-left: 0;
+			width: fit-content;
+			text-align: center;
+			font-size: calc(1vw + 1rem);
+			border-bottom: transparent;
+		}
 	}
 	.cv {
 		color: white;
 	}
-
-	.light .cv {
-		color: #1da1f2;
+	.light {
+		.cv, .small ul li {
+			color: #1da1f2;
+		}
 	}
-	.light .small ul li {
-		color: #1da1f2;
-	}
-
-	.theme-switch{
+	.theme-switch {
 		margin-left: 0rem;
 		background: transparent !important;
 		transition: all 0.6s;
 	}
 }
 @media only screen and (max-width: 600px) {
-	.small ul li {
-		font-size: calc(1vw + 13px);
-		font-weight: 500;
+	.small {
+		ul li {
+			font-size: calc(1vw + 13px);
+			font-weight: 500;
+		}
+		> ul {
+			gap: 30px;
+		}
 	}
-	.small > ul{
-		gap: 30px;
-	}
-}
+}  

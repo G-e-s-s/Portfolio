@@ -1,7 +1,6 @@
 :root {
-	--gradient: linear-gradient(to bottom, #05BECD, #3A7DD9);
+	--gradient:linear-gradient(to bottom, #05BECD, #3A7DD9);
 }
-
 .home {
 	display: flex;
 	align-items: center;
@@ -10,12 +9,10 @@
 	padding-bottom: 55px;
 	position: relative;
 }
-
-.home-text h1 {
+.name {
 	font-size: calc(1vw + 3rem);
 	height: auto;
 }
-
 .gradientText {
 	width: fit-content;
 	background: var(--gradient);
@@ -23,53 +20,46 @@
 	color: transparent;
 	font-size: calc(1vw + 3rem);
 }
-
-.home-text h1 span:last-of-type span:first-of-type {
-	cursor: pointer;
+.name .textFlower:last-of-type .textFlower {
+	&:first-of-type {
+		cursor: pointer;
+	}
+	&:last-of-type {
+		display: inline-block;
+		position: absolute;
+		left: 560px;
+		top: 175px;
+		background: transparent;
+		border: 1px solid #1da1f2;
+		font-size: calc(1vw + 0.85rem);
+		width: 200px;
+		text-align: center;
+		border-radius: 5px;
+		transform: rotate(15deg);
+		overflow: hidden;
+	}
 }
-
-.home-text h1 span:last-of-type span:last-of-type {
-	display: inline-block;
-	position: absolute;
-	left: 560px;
-	top: 175px;
-	background: transparent;
-	border: 1px solid #1da1f2;
-	font-size: calc(1vw + 0.85rem);
-	width: 200px;
-	text-align: center;
-	border-radius: 5px;
-	transform: rotate(15deg);
-	overflow: hidden;
-}
-
 .react-typewriter-text-wrap {
 	margin-top: -3rem;
 }
-
 .home-text .react-typewriter-text {
 	overflow: hidden;
 	font-size: calc(1vw + 1.7rem);
 	font-weight: 300;
 }
-
 .name {
 	display: flex;
 	align-items: baseline;
 }
-
 .flower {
 	color: #1da1f2;
 	margin-left: 20px;
 }
-
 .btns {
 	margin-top: 2rem;
 	display: flex;
 }
-
-.btn1,
-.btn2 {
+.btn1, .btn2 {
 	border-radius: 10px;
 	cursor: pointer;
 	color: white;
@@ -78,49 +68,40 @@
 	display: grid;
 	place-items: center;
 }
-
 .btn1 {
 	min-height: 35px;
 	width: 120px;
 	margin-right: 10px;
 	border: double 2px transparent;
-	background-image: linear-gradient(#232135, #232135),
-		radial-gradient(circle at top left, #1da1f2, #6253e8);
+	background-image: linear-gradient(#232135, #232135), radial-gradient(circle at top left, #1da1f2, #6253e8);
 	background-origin: border-box;
 	background-clip: content-box, border-box;
 }
-
 .light .btn1 {
-	background-image: linear-gradient(to bottom left, rgba(248,149,134,1), rgba(251,226,168));
+	background-image: linear-gradient(to bottom left, rgba(248, 149, 134, 1), rgba(251, 226, 168));
 	color: black;
 }
-
 .btn2 {
 	min-height: 35px;
 	width: 150px;
 	border: double 2px transparent;
-	background-image: linear-gradient(#232135, #232135),
-		radial-gradient(circle at top left, #1da1f2, #6253e8);
+	background-image: linear-gradient(#232135, #232135), radial-gradient(circle at top left, #1da1f2, #6253e8);
 	background-origin: border-box;
 	background-clip: content-box, border-box;
 }
-
 .light .btn2 {
-	background-image: linear-gradient(to top right, rgba(248,149,134,1), rgba(251,226,168));
+	background-image: linear-gradient(to top right, rgba(248, 149, 134, 1), rgba(251, 226, 168));
 	color: black;
 }
-
 @media only screen and (max-width: 1040px) and (min-width: 899px) {
 	.home {
 		padding-top: 8rem;
 	}
-
-	.home-text h1 span:last-of-type span:last-of-type {
+	.name .textFlower:last-of-type .textFlower:last-of-type {
 		left: 230px;
 		top: 140px;
 		width: 200px;
 	}
-
 	.react-typewriter-text-wrap {
 		margin-top: -1.5rem;
 	}
@@ -128,65 +109,53 @@
 		font-size: 50px;
 	}
 }
-
 @media only screen and (max-width: 900px) and (min-width: 800px) {
 	.home {
 		padding-top: 8rem;
 	}
-	.home-text h1 span:last-of-type span:last-of-type {
+	.name .textFlower:last-of-type .textFlower:last-of-type {
 		left: 250px;
 		top: 145px;
 		width: 200px;
 	}
-
 	.react-typewriter-text-wrap {
 		margin-top: -1.5rem;
 	}
-
 	.home-text .react-typewriter-text {
 		line-height: 1.6rem;
 	}
 }
-
 @media only screen and (max-width: 800px) and (min-width: 600px) {
 	.home {
 		padding-top: 8rem;
 	}
-	.home-text h1 span:last-of-type span:last-of-type {
+	.name .textFlower:last-of-type .textFlower:last-of-type {
 		left: 280px;
 		top: 145px;
 		width: 200px;
 	}
 }
-
 @media only screen and (max-width: 600px) {
 	.home {
 		padding-top: 8rem;
 	}
-	.home-text h1 span:last-of-type span:last-of-type {
+	.name .textFlower:last-of-type .textFlower:last-of-type {
 		left: 200px;
 		top: 155px;
 		width: 200px;
 	}
-
-	.home-text h1 {
+	.home-text {
+		h1 {
 		font-size: calc(1vw + 1.6rem);
-	}
-
-	.home-text .react-typewriter-text {
+		}
+		.react-typewriter-text {
 		font-size: calc(1vw + 1rem);
+		}
 	}
-
 	.react-typewriter-text-wrap {
 		margin-top: -01.5rem;
 	}
-
-	.btn1 {
-		width: 130px;
-		font-weight: 300;
-	}
-
-	.btn2 {
+	.btn1, .btn2 {
 		width: 130px;
 		font-weight: 300;
 	}
@@ -194,12 +163,11 @@
 		font-size: 40px;
 	}
 }
-
 @media only screen and (max-width: 500px) {
 	.home {
 		padding-top: 8rem;
 	}
-	.home-text h1 span:last-of-type span:last-of-type {
+	.name .textFlower:last-of-type .textFlower:last-of-type {
 		top: 140px;
 		left: 63px;
 		width: 150px;
@@ -211,4 +179,4 @@
 	.gradientText {
 		font-size: 30px;
 	}
-}
+}  
