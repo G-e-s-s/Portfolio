@@ -11,36 +11,13 @@
 }
 .name {
 	font-size: calc(1vw + 3rem);
-	height: auto;
 }
 .gradientText {
-	width: fit-content;
 	background: var(--gradient);
 	background-clip: text;
 	color: transparent;
 	font-size: calc(1vw + 3rem);
-}
-.name .textFlower:last-of-type .textFlower {
-	&:first-of-type {
-		cursor: pointer;
-	}
-	&:last-of-type {
-		display: inline-block;
-		position: absolute;
-		left: 560px;
-		top: 175px;
-		background: transparent;
-		border: 1px solid #1da1f2;
-		font-size: calc(1vw + 0.85rem);
-		width: 200px;
-		text-align: center;
-		border-radius: 5px;
-		transform: rotate(15deg);
-		overflow: hidden;
-	}
-}
-.react-typewriter-text-wrap {
-	margin-top: -3rem;
+	margin: 50px 0 0 0;
 }
 .home-text .react-typewriter-text {
 	overflow: hidden;
@@ -97,14 +74,6 @@
 	.home {
 		padding-top: 8rem;
 	}
-	.name .textFlower:last-of-type .textFlower:last-of-type {
-		left: 230px;
-		top: 140px;
-		width: 200px;
-	}
-	.react-typewriter-text-wrap {
-		margin-top: -1.5rem;
-	}
 	.gradientText {
 		font-size: 50px;
 	}
@@ -112,14 +81,6 @@
 @media only screen and (max-width: 900px) and (min-width: 800px) {
 	.home {
 		padding-top: 8rem;
-	}
-	.name .textFlower:last-of-type .textFlower:last-of-type {
-		left: 250px;
-		top: 145px;
-		width: 200px;
-	}
-	.react-typewriter-text-wrap {
-		margin-top: -1.5rem;
 	}
 	.home-text .react-typewriter-text {
 		line-height: 1.6rem;
@@ -129,20 +90,10 @@
 	.home {
 		padding-top: 8rem;
 	}
-	.name .textFlower:last-of-type .textFlower:last-of-type {
-		left: 280px;
-		top: 145px;
-		width: 200px;
-	}
 }
 @media only screen and (max-width: 600px) {
 	.home {
 		padding-top: 8rem;
-	}
-	.name .textFlower:last-of-type .textFlower:last-of-type {
-		left: 200px;
-		top: 155px;
-		width: 200px;
 	}
 	.home-text {
 		h1 {
@@ -151,9 +102,6 @@
 		.react-typewriter-text {
 		font-size: calc(1vw + 1rem);
 		}
-	}
-	.react-typewriter-text-wrap {
-		margin-top: -01.5rem;
 	}
 	.btn1, .btn2 {
 		width: 130px;
@@ -166,12 +114,6 @@
 @media only screen and (max-width: 500px) {
 	.home {
 		padding-top: 8rem;
-	}
-	.name .textFlower:last-of-type .textFlower:last-of-type {
-		top: 140px;
-		left: 63px;
-		width: 150px;
-		transform: rotate(20deg);
 	}
 	.btn1 {
 		width: 120px;
