@@ -1,16 +1,16 @@
 import React, { useState } from 'react'
 import '../Header/Header.scss'
 
-//icons
-import { Link } from 'react-scroll';
-import { GiHamburgerMenu } from 'react-icons/gi';
-import { FaSun, FaMoon } from 'react-icons/fa';
-
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
 import photoProfil from "../../assets/Gessica_Goublet.webp"
+
+//icons
+import { Link } from 'react-scroll';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { FaSun, FaMoon } from 'react-icons/fa';
 
 const Nav = ({ isDarkMode, handleToggle }) => {
   const [isOpen, setIsOpen] = useState(true)

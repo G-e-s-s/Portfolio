@@ -7,6 +7,7 @@ import { SiJavascript, SiHtml5, SiCss3, SiReact, SiNodedotjs, SiFigma, SiMongodb
 import { VscVscode } from "react-icons/vsc";
 import { FaGitAlt } from "react-icons/fa";
 import { RiStarSFill } from "react-icons/ri";
+import { TbSeo } from "react-icons/tb";
 
 const Skills = () => {
   return (
@@ -72,6 +73,10 @@ const Skills = () => {
         <div className="bootstrap">
           <SiReactbootstrap />
           <p>Bootstrap </p><div className='star'><RiStarSFill /></div>
+        </div>
+        <div className="seo">
+          <TbSeo />
+          <p>SEO </p><div className='star'><RiStarSFill /><RiStarSFill /><RiStarSFill /></div>
         </div>
       </div>
     </div>

@@ -13,6 +13,7 @@
 		background: var(--gradient);
 		background-clip: text;
 		color: transparent;
+		font-weight: 700;
 	}
 }
 .skill {
@@ -22,7 +23,7 @@
 	align-items: center;
 	justify-content: space-around;
 }
-.html, .css, .js, .github, .git, .node, .react, .mon, .fig, .notion, .canva, .adobe, .Vscode, .sass, .bootstrap {
+.html, .css, .js, .github, .git, .node, .react, .mon, .fig, .notion, .canva, .adobe, .Vscode, .sass, .bootstrap, .seo {
 	margin-right: 30px;
 	margin-bottom: 20px;
 	min-height: var(--skill-size);
@@ -49,7 +50,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	max-height: calc(var(--skill-size) - 60px);
+	max-height: calc(var(--skill-size) - 40px);
 	svg {
 		width: 35px;
 		min-height: calc(var(--skill-size) - 130px);
@@ -125,6 +126,9 @@
 }
 .bootstrap:hover {
 	--skill-color:#8b32ff;
+}
+.seo:hover {
+	--skill-color:#ff5d5d;
 }
 @media only screen and (max-width: 600px) {
 	:root {
