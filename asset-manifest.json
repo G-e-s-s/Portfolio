@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.6a7a74e1.css",
-    "main.js": "/Portfolio/static/js/main.6ffdc573.js",
+    "main.css": "/Portfolio/static/css/main.092325ec.css",
+    "main.js": "/Portfolio/static/js/main.3531c870.js",
     "static/media/Gessica_Goublet.webp": "/Portfolio/static/media/Gessica_Goublet.6455f628a89a031fb1f3.webp",
     "index.html": "/Portfolio/index.html",
-    "main.6a7a74e1.css.map": "/Portfolio/static/css/main.6a7a74e1.css.map",
-    "main.6ffdc573.js.map": "/Portfolio/static/js/main.6ffdc573.js.map"
+    "main.092325ec.css.map": "/Portfolio/static/css/main.092325ec.css.map",
+    "main.3531c870.js.map": "/Portfolio/static/js/main.3531c870.js.map"
   },
   "entrypoints": [
-    "static/css/main.6a7a74e1.css",
-    "static/js/main.6ffdc573.js"
+    "static/css/main.092325ec.css",
+    "static/js/main.3531c870.js"
   ]
 }
