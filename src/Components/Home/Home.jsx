@@ -14,7 +14,7 @@ const Home = () => {
       <div className="home-text">
         <div className='name'>
           <h1 className='gradientText'>
-           Portfoilio de Gessica Goublet
+           Portfolio de Gessica Goublet
           </h1>
           <span>
             <div className='flower' alt="flower">
